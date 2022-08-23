@@ -27,7 +27,7 @@ elif menu == '회원가입':
         if submitted:
 
             if upw != upw_chk:
-                st.warning('눈을 어디두고 치는거니?')
+                st.warning('다시 쳐')
                 st.stop()
             st.success(f'{uid} {upw} {usex}');
             cur.execute(f"INSERT INTO users VALUES ("
